@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    :root {
+        color-scheme: light;
+
+        --bg: 245 245 245;
+        --surface: 255 255 255;
+        --surface-raised: 255 255 255;
+        --surface-sunken: 236 236 236;
+        --overlay: 10 10 10;
+
+        --fg: 20 20 20;
+        --fg-muted: 64 64 64;
+        --fg-subtle: 92 92 92;
+        --fg-on-accent: 255 255 255;
+
+        --border: 220 220 220;
+        --border-subtle: 236 236 236;
+        --border-input: 117 117 117;
+        --border-strong: 38 38 38;
+
+        --accent: 38 38 38;
+        --accent-hover: 10 10 10;
+        --accent-subtle: 228 228 228;
+        --accent-ring: 92 92 92;
+
+        --success: 22 101 52;
+        --success-subtle: 228 243 233;
+        --warning: 138 83 0;
+        --warning-subtle: 251 240 218;
+        --danger: 180 35 28;
+        --danger-subtle: 253 231 229;
+        --info: 31 95 139;
+        --info-subtle: 227 238 246;
+    }
+
+    .dark {
+        color-scheme: dark;
+
+        --bg: 20 20 20;
+        --surface: 28 28 28;
+        --surface-raised: 38 38 38;
+        --surface-sunken: 10 10 10;
+        --overlay: 10 10 10;
+
+        --fg: 237 237 237;
+        --fg-muted: 196 196 196;
+        --fg-subtle: 168 168 168;
+        --fg-on-accent: 10 10 10;
+
+        --border: 48 48 48;
+        --border-subtle: 36 36 36;
+        --border-input: 138 138 138;
+        --border-strong: 237 237 237;
+
+        --accent: 237 237 237;
+        --accent-hover: 255 255 255;
+        --accent-subtle: 48 48 48;
+        --accent-ring: 184 184 184;
+
+        --success: 91 208 139;
+        --success-subtle: 12 42 24;
+        --warning: 251 191 36;
+        --warning-subtle: 51 40 10;
+        --danger: 255 138 128;
+        --danger-subtle: 61 16 13;
+        --info: 127 180 203;
+        --info-subtle: 13 35 45;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    :focus-visible {
+        outline: 2px solid rgb(var(--accent-ring));
+        outline-offset: 2px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+html.a11y-fonte-1 {
+    font-size: 112.5%;
+}
+
+html.a11y-fonte-2 {
+    font-size: 125%;
+}
+
+html.a11y-sublinhar-links a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+html.a11y-espacamento-texto,
+html.a11y-espacamento-texto * {
+    letter-spacing: 0.12em !important;
+    word-spacing: 0.16em !important;
+    line-height: 1.6 !important;
+}
+
+html.a11y-pausar-animacoes *,
+html.a11y-pausar-animacoes *::before,
+html.a11y-pausar-animacoes *::after {
+    animation-play-state: paused !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+}
+
+html.dock-vlibras #vlibras-access-wrapper,
+html.dock-vlibras [vw-access-button] {
+    opacity: 0 !important;
+    pointer-events: none !important;
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amelhoroficina.example/sitemap.xml

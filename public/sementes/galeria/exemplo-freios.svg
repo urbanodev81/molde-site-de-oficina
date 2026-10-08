@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Foto de exemplo: Troca de pastilhas e discos">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#303030"/><stop offset="1" stop-color="#0A0A0A"/></linearGradient>
+<pattern id="l" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M0 0v6" stroke="#fff" stroke-opacity=".03"/></pattern></defs>
+<rect width="800" height="600" fill="url(#g)"/><rect width="800" height="600" fill="url(#l)"/>
+<g transform="translate(310 170) scale(3)" fill="none" stroke="#B8B8B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M30 0a30 30 0 1 0 .1 0M30 20a10 10 0 1 0 .1 0M30 4v8M4 30h8M30 56v-8M56 30h-8"/></g>
+<text x="400" y="440" text-anchor="middle" font-family="Arial Narrow,Arial,sans-serif" font-weight="700" font-size="34" letter-spacing="6" fill="#EDEDED">TROCA DE PASTILHAS E DISCOS</text>
+<text x="400" y="486" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" letter-spacing="5" fill="#9A9A9A">FOTO DE EXEMPLO</text>
+</svg>
